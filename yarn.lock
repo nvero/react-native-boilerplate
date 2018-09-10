@@ -7078,6 +7078,10 @@ puppeteer@^1.2.0:
     rimraf "^2.6.1"
     ws "^5.1.1"
 
+push-notification@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/push-notification/-/push-notification-0.2.5.tgz#07b9550eb06801e696022d200d02e058ab06582e"
+
 q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
