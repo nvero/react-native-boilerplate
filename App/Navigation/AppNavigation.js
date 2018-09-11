@@ -1,18 +1,22 @@
-import { StackNavigator } from 'react-navigation'
-import LaunchScreen from '../Containers/LaunchScreen'
+import React from "react";
+import { StackNavigator } from "react-navigation";
+import styles from "./Styles/NavigationStyles";
 
-import styles from './Styles/NavigationStyles'
+// screens identified by the router
+import Login from "../Containers/LoginScreen";
+import LaunchScreen from "../Containers/LaunchScreen";
+import NavigationDrawer from "./NavigationDrawer";
 
-// Manifest of possible screens
-const PrimaryNav = StackNavigator({
-  LaunchScreen: { screen: LaunchScreen }
-}, {
-  // Default config for all screens
-  headerMode: 'none',
-  initialRouteName: 'LaunchScreen',
-  navigationOptions: {
-    headerStyle: styles.header
-  }
-})
+const PrimaryNav = StackNavigator(
+	{
+		Login: { screen: Login },
+		LaunchScreen: { screen: LaunchScreen },
+		NavigationDrawer: { screen: NavigationDrawer },
+	},
+	{
+		initialRouteName: "Login",
+		headerMode: "none",
+	}
+);
 
-export default PrimaryNav
+export default PrimaryNav;
